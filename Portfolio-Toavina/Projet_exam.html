@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <script src="script-final.js"></script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toavina Rakotoarinoro - Portfolio</title>
+    <link  rel="shortcut icon" href="téléchargement.png" type="image/x-icon">
+    <link rel="stylesheet" href="Stylefi.css" />
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Présentation</a></li>
+                <li><a href="#education">Educations</a></li>
+                <li><a href="#experience">Expériences</a></li>
+                <li><a href="#loisirs">Loisirs</a></li>
+            </ul>
+        </nav>
+        <h1>Mendrika Toavina <br> RAKOTOARINORO</h1>
+        <p>Étudiant en Génie Industriel 4.0 |  Futur Ingénieur en Innovation & Performance Industrielle </p>        
+    </header>
+
+    <div id="about">
+        <img src="about.jpg" alt="photo">
+        <div id="about-text">
+            <h2>PRESENTATION</h2>
+            <p class="intro">
+                Bonjour, je suis étudiant en Génie Industriel 4.0 à l'<span><a href="https://www-ensibs.univ-ubs.fr/fr/index.html" style="color: green;">ENSIBS</a></span> à Lorient, originaire de <span><a href="Madagascar.html" style="color: green;">Madagascar</a></span>. 
+                Je suis passionné par les systèmes automatisés, l’optimisation des processus industriels et la conception mécanique.
+            </p>
+            <p>
+                Mon parcours m’a permis de développer des compétences solides en automatisme, robotique et informatique industrielle, 
+                tout en cultivant une ouverture d’esprit internationale.
+            </p>
+        </div>      
+    </div>
+
+    <div id="education">
+        <div class="ed-left">
+            <h2>PARCOURS <br> PEDAGOGIQUES</h2>
+        </div>
+        <div class="ed-right">
+            <p>
+                Actuellement étudiant à l’<span><a href="https://www-ensibs.univ-ubs.fr/fr/index.html" style="color: green;">ENSIBS</a></span> à Lorient, France, en Génie Industriel 4.0, je suis passionné par
+                l'automatisation, l’optimisation des systèmes, et la mécanique.
+            </p>
+
+            <h3>Diplôme Technicien Supérieur Spécialisé – Génie des Systèmes Automatisés (2024, IST Antananarivo)</h3>
+            <hr>
+            <p>Actuellement en cours, ce cursus me forme aux systèmes intelligents, à l’industrie du futur et à la gestion de projets complexes.</p>
+    
+            <h3>Diplôme Technicien Supérieur – Génie Industriel en Production (2020–2023)</h3>
+            <hr>
+            <p>Cette formation m'a permis d'acquérir des bases solides en automatisme, robotique, et programmation industrielle.</p>
+
+            <h3>DELF B2 – Alliance Française (2022)</h3>
+            <hr>
+            <p>Une certification en langue française qui atteste de ma capacité à poursuivre des études dans cette langue. </p>
+
+            <h3>Baccalauréat Série D – Saint Michel Amparibe (2017–2020)</h3>
+            <hr>
+            <p>Diplômé avec mention, ce diplôme a marqué le début de mon orientation vers les sciences et la technologie.</p>
+        </div>
+    </div>
+
+    <div id="experience">
+        <div class="exp-left">
+        </div>
+      
+        <div class="exp-right">
+            <h2>EXPÉRIENCES</h2>
+          <div class="exp-block">
+            <h3>GV Hennebont Ping Center (2024 – présent)</h3>
+            <p>En tant que maître d’internat, j’ai assuré la surveillance quotidienne de l’hébergement et l’encadrement des jeunes internes.</p>
+            <p>Mes missions comprenaient le respect des règles de vie collective, la gestion des téléphones portables, et la garantie d’un cadre sain et discipliné.</p>
+            <p>J’ai également participé à la préparation et à la mise en place des repas, ainsi qu’à l’accueil et l’accompagnement des nouveaux stagiaires.</p>
+          </div>
+      
+          <div class="exp-block">
+            <h3>MAZAVA SPORTSWEAR (2023)</h3>
+            <p>Durant ce stage, j’ai observé les interventions techniques sur les machines à coudre afin d’identifier les dysfonctionnements impactant la chaîne de production.</p>
+            <p>Après analyse des problèmes récurrents, j’ai mené une étude sur l’amélioration des performances globales de l’entreprise.</p>
+            <p>Résultat : une méthode de planification permettant une hausse de productivité de 27,43 %, présentée dans mon mémoire de fin d’études.</p>
+          </div>
+      
+          <div class="exp-block">
+            <h3>MADAGASCAR TRANS AIR (2022)</h3>
+            <p>J’ai assisté les techniciens dans les opérations de maintenance préventive et curative sur les aéronefs, tout en respectant les cahiers des charges techniques.</p>
+            <p>Je réalisais également des contrôles qualité des travaux finalisés et participais aux essais en point fixe avant leur remise en service ou décollage.</p>
+          </div>
+        </div>
+    </div>
+
+    <div id="loisirs">
+        <h2>Loisirs</h2>
+      
+        <div class="carousel">
+          <button class="nav left" onclick="changeSlide(-1)">&#10094;</button>
+      
+          <img id="monImage" src="basket.jpg" alt="Loisir" />
+      
+          <button class="nav right" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+    <div id="bas">      
+            
+        <button onclick="afficher()" id="btn-contact">Afficher nos coordonnées</button>
+        <div id="coordonnées">
+            
+        </div>
+
+        <div class="formulaire">
+            <h2> Prendre Rendez-vous </h2>
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+        
+                <label for="prenom">Prénom : </label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+        
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="date">Date de Rendez-vous : </label>
+                <input type="date" id="date" name="date" ><br><br>
+        
+                <label for="Motif"> Motif de la rencontre : </label>
+                <select id="Motif" name="Motif" required>
+                    <option value="Bar"> Boire</option>
+                    <option value="Basket"> Basket </option>
+                    <option value="Bagarre"> Se bagarrer </option>
+                    <option value="Informations"> Informations</option>
+                </select>
+                <br><br>
+        
+                <p> Que préferez-vous : </p>
+                <div class="input-group">
+                    <input type="radio" id="matin" name="horaire" value="matin">
+                    <label for="matin">Matinée</label>
+                  </div>
+                  
+                  <div class="input-group">
+                    <input type="radio" id="apresmidi" name="horaire" value="apresmidi">
+                    <label for="apresmidi">Après-midi</label>
+                  </div>
+                  
+        
+                <label for="demande"> Un message à transmettre avant la rencontre : </label><br>
+                <textarea id="demande" name="demande" rows="4" cols="50"> </textarea><br><br>
+        
+                <!-- Bouton de soumission-->
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+
+    </div>
+      
+
+
+
+
+
+    <footer>
+        <p style="color: white;">&copy; 2025 Mendrika Toavina Rakotoarinoro</p>
+    </footer>
+
+</body>
+</html>
